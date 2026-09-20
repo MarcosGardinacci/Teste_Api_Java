@@ -16,8 +16,16 @@ Projeto de automação de testes de API REST utilizando Java, RestAssured e JUni
 ## Estrutura
 
 ```
-src/test/java/login/
-└── LoginTest.java    ← Testes de login
+src/test/java/
+├── data/
+│   └── UserData.java          → Dados de teste (credenciais)
+├── helpers/
+│   └── RequestHelper.java     → Configuração RestAssured
+├── services/
+│   └── AuthService.java       → Endpoints de autenticação
+└── tests/
+    └── login/
+        └── LoginTest.java     → Testes de login
 ```
 
 ## Como Rodar
